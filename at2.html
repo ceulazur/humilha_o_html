@@ -1,0 +1,168 @@
+<!-- 
+    1. Use as tags semânticas para dividir a seção (no lugar das divs)
+     2. Adicione um novo artigo com formulário de cadastro de usuários.
+      Esse usuário deve fazer requisições GET na página https://www.w3schools.com/action_page.php.
+       Seu formulário deve conter:
+        a. Um campo de texto para nome com que permite no máximo 15 caracteres 
+        b. Um campo texto apenas para leitura 
+        c. Um campo numérico para inserir números entre 25000 e 30000 
+        d. Uma entrada do tipo radiobox 
+        e. Um input do tipo checkbox
+     3. Comente o seu código!
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gostinho de Céu</title>
+</head>
+<body>
+    <style> body {
+        background-color: rgb(39, 107, 109); /* Change the background color to blue */
+        color: rgb(17, 16, 16); /* Change the text color to white */
+        font-family: Arial, sans-serif; /* Change the font family for the text */
+    }
+
+    /* Style for header */
+    header {
+        background-color: rgb(26, 155, 206);
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Style for article containers */
+    article {
+        background-color: rgba(22, 105, 231, 0.7); /* Semi-transparent black background */
+        padding: 20px;
+        margin: 20px;
+    }
+
+    /* Style for form elements */
+    form {
+        padding: 20px;
+        border: 1px solid rgb(230, 208, 17);
+        border-radius: 5px;
+    }
+
+    /* Style for form labels */
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    body {
+        background-color: blue; /* Change the background color to blue */
+        color: white; /* Change the text color to white */
+        font-family: Arial, sans-serif; /* Change the font family for the text */
+    }
+</style>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Gostinho de Céu</h1>
+        <p>Adoro <b>poesias</b> e por isso escrevo algumas...</p>
+    </header>
+
+    <!-- Table Section -->
+    <section>
+        <h2>Minhas Poesias</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Títulos</th>
+                    <th>Tema</th>
+                    <th>Inspiração</th>
+                    <th>LINKS</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <ul>
+                        <!-- como fazer ficar listado direito tbm mds q trem horroroso -->
+                    <td> <li>Maré Vermelha</li></td>
+                    <td> <li>Término<li> </li> Depressão</li></td>
+                    <td><li> Suco de uva</li> <li>Noite Chuvosa</li></td>
+                    
+                    <td> <li> <a href="https://youtu.be/9ukGVYB27I8">Maré Vermelha</a></li></td>
+                    </ul>
+                </tr>
+                <tr>
+                    <ul></ul>
+                    <!-- <ol> type="1"  -->
+                        <!-- mudou nada esse ol e type não uai q ódio -->
+                        <!-- como fazer ficar listado direito tbm mds q trem horroroso -->
+                    <td> <li>Confortável</li></td>
+                    <td> <li>Desejo de Mudança<li> </li> Vazio</li></td>
+                    <td><li>Pandemia</li> <li>Rotina</li></td>
+                    <td> <li> <a href="https://youtu.be/zaohTMUori0">Confortável</a></li></td>
+                    </ul>
+                </tr>
+                <tr>
+                    <ul>
+                        <!-- como fazer ficar listado direito tbm mds q trem horroroso -->
+                    <td> <li>Sinto</li></td>
+                    <td> <li>Afeto<li> </li>Dúvidas</li></td>
+                    <td><li>Aniversário</li> <li>Amor</li></td>
+                    <td> <li><a href="https://youtu.be/ukoYb2GNcLQ">Sinto</a></li></td>
+                    <br/>
+                    </ul>
+                </tr>
+                
+                <tr>
+                    <ul>
+                        <!-- como fazer ficar listado direito tbm mds q trem horroroso -->
+                    <td> <li>Estampa</li></td>
+                    <td> <li>Afeto<li><li>Saudade</li> <li>Melancólia</li></td>
+                    <td><li>Mar</li> <li>Relacionamentos</li></td>
+                    <td> <li><a href="https://youtu.be/Hgoe1Ew7Q7M">Estampa</a></li></td>
+                    </ul>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+        <h2>Nuvens Queridas</h2>
+        <article>
+            <h3>E aí, está gostando até agora? Não se esqueça de se inscrever no canal e no instagram (@ceulazur)!!!</h3>
+            <p></p>
+            <a href="https://youtu.be/tK7NZJeHVdo">
+                <img src="j.jpeg" alt="OH HI">
+            </a>
+        </article>
+        <article>
+            <h3>Olha nois ae de novo uai</h3>
+            <p></p>
+        </article>
+    </section>
+
+    <!-- User Registration Section -->
+    <section>
+        <h2>Compartilhe ideias de poesia</h2>
+        <article>
+            <h3>Formulário de Cadastro</h3>
+            <!-- Acho que não entendi bem essa parte / oq c quer de mim mesmo (n entendi o link do w3schools)
+            aah acho que agora eu posso ter entendido
+            é p usar php afinal hm
+            vou só de html msm hein, hm confusion-->
+            <form action="https://www.w3schools.com/action_page.php" method="get">
+                <label for="nome">Nome (máximo 15 caracteres):</label>
+                <input type="text" id="nome" name="nome" maxlength="15" required>
+                <br>
+                <label for="tema">Indique um tema/história para uma poesia:</label>
+                <input type="text" id="numero" name="tema" maxlength="25000" required>
+                <br>
+                <label for="radiobox">Quer ter o seu nome creditado?</label>
+                <input type="radio" id="radiobox1" name="radiobox" value="SIM" required>
+                <label for="radiobox1">SIM</label>
+                <input type="radio" id="radiobox2" name="radiobox" value="NÃO">
+                <label for="radiobox2">NÃO</label>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </article>
+    </section>
+</body>
+</html>
